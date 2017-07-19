@@ -1,6 +1,4 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', true);
 /*
 +---------------------------------------------------------------------------+
 | Revive Adserver                                                           |
@@ -98,9 +96,8 @@ function buildWebsiteForm($affiliate)
     $form->addElement('text', 'name', $GLOBALS['strName']);
     $form->addElement('text', 'contact', $GLOBALS['strContact']);
     $form->addElement('text', 'email', $GLOBALS['strEMail']);
-    $form->addElement('text', 'threshold', $GLOBALS['strThreshold']);
     $form->addElement('checkbox', 'fraud_status', $GLOBALS['strFraudCheck']);
-    
+    $form->addElement('text', 'threshold', $GLOBALS['strThreshold']);
     $form->addElement('controls', 'form-controls');
     $form->addElement('submit', 'save', 'Save changes');
 
@@ -117,7 +114,7 @@ function buildWebsiteForm($affiliate)
     $form->addRule('email', $emailRequiredMsg, 'required');
     $form->addRule('email', $GLOBALS['strEmailField'], 'email');
     $form->addRule('threshold', $GLOBALS['strThreshold']);
-    ;
+    
 
 
     //set form  values
