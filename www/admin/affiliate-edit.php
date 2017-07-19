@@ -27,7 +27,7 @@ require_once MAX_PATH . '/lib/OA/Admin/Template.php';
 
 
 // Register input variables
-phpAds_registerGlobalUnslashed ('move', 'name', 'website', 'contact', 'email',
+phpAds_registerGlobalUnslashed ('move', 'name', 'website', 'contact', 'email','fruad_check',
                                'errormessage', 'submit', 'publiczones_old', 'formId');
 
 // Security check
@@ -98,6 +98,8 @@ function buildWebsiteForm($affiliate)
     $form->addElement('text', 'name', $GLOBALS['strName']);
     $form->addElement('text', 'contact', $GLOBALS['strContact']);
     $form->addElement('text', 'email', $GLOBALS['strEMail']);
+    $form->addElement('text', 'fraud_check', $GLOBALS['strFraudCheck']);
+
 
     $form->addElement('controls', 'form-controls');
     $form->addElement('submit', 'save', 'Save changes');
@@ -114,6 +116,8 @@ function buildWebsiteForm($affiliate)
     $emailRequiredMsg = $translation->translate($GLOBALS['strXRequiredField'], array($GLOBALS['strEMail']));
     $form->addRule('email', $emailRequiredMsg, 'required');
     $form->addRule('email', $GLOBALS['strEmailField'], 'email');
+    $form->addRule('fraud_check', $GLOBALS['strFraudCheck'], 'required');
+
 
     //set form  values
     $form->setDefaults($affiliate);
@@ -133,6 +137,7 @@ function buildWebsiteForm($affiliate)
     $oPublisher->agencyId       = $aFields['agencyid'];
     $oPublisher->contactName    = $aFields['contact'];
     $oPublisher->emailAddress   = $aFields['email'];
+    $oPublisher->fraud_check   = $aFields['fraud_check'];
     $oPublisher->publisherId    = $aFields['affiliateid'];
     $oPublisher->publisherName  = $aFields['name'];
     $oPublisher->website        = $aFields['website'];

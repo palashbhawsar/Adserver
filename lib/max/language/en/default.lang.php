@@ -616,6 +616,7 @@ $GLOBALS['strHideParentAffiliates'] = "Hide parent websites";
 // Website (properties)
 $GLOBALS['strWebsite'] = "Website";
 $GLOBALS['strWebsiteURL'] = "Website URL";
+$GLOBALS['strFraudCheck'] = "Fraud Check";
 $GLOBALS['strAllowAffiliateModifyZones'] = "Allow this user to modify their own zones";
 $GLOBALS['strAllowAffiliateLinkBanners'] = "Allow this user to link banners to their own zones";
 $GLOBALS['strAllowAffiliateAddZone'] = "Allow this user to define new zones";
