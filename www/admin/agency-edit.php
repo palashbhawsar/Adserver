@@ -34,6 +34,7 @@ phpAds_registerGlobalUnslashed (
 	,'submit'
 	,'logout_url'
     ,'fraud_status'
+    ,'threshold'
 );
 
 // Security check
@@ -98,6 +99,7 @@ function buildAgencyForm($aAgency)
     $form->addElement('text', 'contact', $GLOBALS['strContact']);
     $form->addElement('text', 'email', $GLOBALS['strEMail']);
     $form->addElement('checkbox', 'fraud_status', $GLOBALS['strFraudCheck']);
+    $form->addElement('text', 'threshold', $GLOBALS['strThreshold']);
     //we want submit to be the last element in its own separate section
     $form->addElement('controls', 'form-controls');
     $form->addElement('submit', 'submit', $GLOBALS['strSaveChanges']);
@@ -113,8 +115,7 @@ function buildAgencyForm($aAgency)
     $emailRequiredMsg = $translation->translate($GLOBALS['strXRequiredField'], array($GLOBALS['strEMail']));
     $form->addRule('email', $emailRequiredMsg, 'required');
     $form->addRule('email', $GLOBALS['strEmailField'], 'email');
-    
-    
+   
     
 
     //set form  values
@@ -128,6 +129,7 @@ function buildAgencyForm($aAgency)
 function processForm($aAgency, $form)
 {
     $aFields = $form->exportValues();
+    
 
     // Get previous values
     if (!empty($aFields['agencyid'])) {
@@ -136,20 +138,27 @@ function processForm($aAgency, $form)
         $agency = $doAgency->toArray();
     }
     // Name
+    
     $agency['name']           = $aFields['name'];
     $agency['contact']        = $aFields['contact'];
     $agency['email']          = $aFields['email'];
-    if($aFields['fraud_status']=='')
+    if($aFields['fraud_status']== '')
     {
         $agency['fraud_status'] = 0;
     }else
     {
             $agency['fraud_status']   = $aFields['fraud_status'];
     }
+    
+            $agency['threshold']   = $aFields['threshold'];
+
+    
+        
     $agency['logout_url']     = $aFields['logout_url'];
 
     // Permissions
     $doAgency = OA_Dal::factoryDO('agency');
+
     if (empty($aFields['agencyid'])) {
         $doAgency->setFrom($agency);
         $agencyid = $doAgency->insert();
