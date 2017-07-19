@@ -96,7 +96,7 @@ function buildAgencyForm($aAgency)
     $form->addElement('text', 'name', $GLOBALS['strName']);
     $form->addElement('text', 'contact', $GLOBALS['strContact']);
     $form->addElement('text', 'email', $GLOBALS['strEMail']);
-    $form->addElement('text','fraud_check', $GLOBALS['strFraudCheck']);
+    $form->addElement('CheckBox','fraud_check', $GLOBALS['strFraudCheck']);
     //we want submit to be the last element in its own separate section
     $form->addElement('controls', 'form-controls');
     $form->addElement('submit', 'submit', $GLOBALS['strSaveChanges']);
@@ -140,6 +140,7 @@ function processForm($aAgency, $form)
     // Default fields
     $agency['contact']        = $aFields['contact'];
     $agency['email']          = $aFields['email'];
+    $agency['fraud_check']    = $aFields['fraud_check'];
     $agency['logout_url']     = $aFields['logout_url'];
 
     // Permissions
