@@ -74,6 +74,7 @@ else {
 //build agency form
 $agencyForm = buildAgencyForm($aAgency);
 
+
 if ($agencyForm->validate()) {
     //process submitted values
     processForm($aAgency, $agencyForm);
@@ -96,7 +97,7 @@ function buildAgencyForm($aAgency)
     $form->addElement('text', 'name', $GLOBALS['strName']);
     $form->addElement('text', 'contact', $GLOBALS['strContact']);
     $form->addElement('text', 'email', $GLOBALS['strEMail']);
-     $form->addElement('checkbox', 'fraud_status', $GLOBALS['strFraudCheck']);
+    $form->addElement('checkbox', 'fraud_status', $GLOBALS['strFraudCheck']);
     //we want submit to be the last element in its own separate section
     $form->addElement('controls', 'form-controls');
     $form->addElement('submit', 'submit', $GLOBALS['strSaveChanges']);
@@ -136,10 +137,15 @@ function processForm($aAgency, $form)
     }
     // Name
     $agency['name']           = $aFields['name'];
-    // Default fields
     $agency['contact']        = $aFields['contact'];
     $agency['email']          = $aFields['email'];
-     $agency['fraud_status'] = $aFields['fraud_status'];
+    if($aFields['fraud_status']=='')
+    {
+        $agency['fraud_status'] = 0;
+    }else
+    {
+            $agency['fraud_status']   = $aFields['fraud_status'];
+    }
     $agency['logout_url']     = $aFields['logout_url'];
 
     // Permissions

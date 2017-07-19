@@ -638,3 +638,52 @@ Jul 19 18:43:51 +0530 OX-596f45f79a01d [  warning]  Missing argument 3 for OA_Ad
 Jul 19 18:43:51 +0530 OX-596f45f7c20fa [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
 Jul 19 18:43:53 +0530 OX-596f45f919569 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
 Jul 19 18:43:58 +0530 OX-596f45fde9657 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 19:35:38 +0530 OX-596f521a0a464 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 119 and defined
+Jul 19 19:35:41 +0530 OX-596f521d8108e [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 119 and defined
+Jul 19 19:35:45 +0530 OX-596f52212ef62 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 119 and defined
+Jul 19 19:35:45 +0530 OX-596f522157c8d [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 119 and defined
+Jul 19 19:35:48 +0530 OX-596f5223d9bd0 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 119 and defined
+Jul 19 19:35:50 +0530 OX-596f5226896e0 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 119 and defined
+Jul 19 19:35:54 +0530 OX-596f522a2e19c [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 119 and defined
+Jul 19 19:35:54 +0530 OX-596f522a55cfc [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 119 and defined
+ 
+Jul 19 19:42:33 +0530 OX-maintenance-596f53b999cc7 [     info]  Running Maintenance Priority Engine
+Jul 19 19:42:33 +0530 OX-maintenance-596f53b999cc7 [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_GetRequiredAdImpressionsLifetime
+Jul 19 19:42:33 +0530 OX-maintenance-596f53b999cc7 [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_GetRequiredAdImpressionsLifetime
+Jul 19 19:42:33 +0530 OX-maintenance-596f53b999cc7 [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_GetRequiredAdImpressionsDaily
+Jul 19 19:42:33 +0530 OX-maintenance-596f53b999cc7 [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_GetRequiredAdImpressionsDaily
+Jul 19 19:42:33 +0530 OX-maintenance-596f53b999cc7 [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_AllocateZoneImpressions
+Jul 19 19:42:33 +0530 OX-maintenance-596f53b999cc7 [     info]    - Selecting Zones forecasts for all managers for OI from 2017-07-19 12:00:00 to 2017-07-19 12:59:59
+Jul 19 19:42:33 +0530 OX-maintenance-596f53b999cc7 [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_AllocateZoneImpressions
+Jul 19 19:42:33 +0530 OX-maintenance-596f53b999cc7 [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_PriorityCompensation
+Jul 19 19:42:33 +0530 OX-maintenance-596f53b999cc7 [     info]    - Selecting Zones forecasts for all managers for OI from 2017-07-19 12:00:00 to 2017-07-19 12:59:59
+Jul 19 19:42:33 +0530 OX-maintenance-596f53b999cc7 [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_PriorityCompensation
+Jul 19 19:42:33 +0530 OX-maintenance-596f53b999cc7 [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_ECPMforContract
+Jul 19 19:42:33 +0530 OX-maintenance-596f53b999cc7 [     info]  - Selecting All Managers
+Jul 19 19:42:33 +0530 OX-maintenance-596f53b999cc7 [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_ECPMforContract
+Jul 19 19:42:33 +0530 OX-maintenance-596f53b999cc7 [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_ECPMforRemnant
+Jul 19 19:42:33 +0530 OX-maintenance-596f53b999cc7 [     info]  - Selecting Managers with ECPM priority campaigns running
+Jul 19 19:42:33 +0530 OX-maintenance-596f53b999cc7 [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_ECPMforRemnant
+Jul 19 19:42:33 +0530 OX-maintenance-596f53b999cc7 [     info]  Maintenance Priority Engine Completed (Started at 2017-07-19 19:42:33 ICT)
+ 
+Jul 19 19:42:36 +0530 OX-maintenance-596f53bc49dfa [     info]  Running Maintenance Priority Engine
+Jul 19 19:42:36 +0530 OX-maintenance-596f53bc49dfa [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_GetRequiredAdImpressionsLifetime
+Jul 19 19:42:36 +0530 OX-maintenance-596f53bc49dfa [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_GetRequiredAdImpressionsLifetime
+Jul 19 19:42:36 +0530 OX-maintenance-596f53bc49dfa [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_GetRequiredAdImpressionsDaily
+Jul 19 19:42:36 +0530 OX-maintenance-596f53bc49dfa [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_GetRequiredAdImpressionsDaily
+Jul 19 19:42:36 +0530 OX-maintenance-596f53bc49dfa [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_AllocateZoneImpressions
+Jul 19 19:42:36 +0530 OX-maintenance-596f53bc49dfa [     info]    - Selecting Zones forecasts for all managers for OI from 2017-07-19 12:00:00 to 2017-07-19 12:59:59
+Jul 19 19:42:36 +0530 OX-maintenance-596f53bc49dfa [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_AllocateZoneImpressions
+Jul 19 19:42:36 +0530 OX-maintenance-596f53bc49dfa [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_PriorityCompensation
+Jul 19 19:42:36 +0530 OX-maintenance-596f53bc49dfa [     info]    - Selecting Zones forecasts for all managers for OI from 2017-07-19 12:00:00 to 2017-07-19 12:59:59
+Jul 19 19:42:36 +0530 OX-maintenance-596f53bc49dfa [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_PriorityCompensation
+Jul 19 19:42:36 +0530 OX-maintenance-596f53bc49dfa [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_ECPMforContract
+Jul 19 19:42:36 +0530 OX-maintenance-596f53bc49dfa [     info]  - Selecting All Managers
+Jul 19 19:42:36 +0530 OX-maintenance-596f53bc49dfa [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_ECPMforContract
+Jul 19 19:42:36 +0530 OX-maintenance-596f53bc49dfa [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_ECPMforRemnant
+Jul 19 19:42:36 +0530 OX-maintenance-596f53bc49dfa [     info]  - Selecting Managers with ECPM priority campaigns running
+Jul 19 19:42:36 +0530 OX-maintenance-596f53bc49dfa [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_ECPMforRemnant
+Jul 19 19:42:36 +0530 OX-maintenance-596f53bc49dfa [     info]  Maintenance Priority Engine Completed (Started at 2017-07-19 19:42:36 ICT)
+Jul 19 19:46:39 +0530 OX-596f54af4646b [  warning]  Cannot modify header information - headers already sent by (output started at /Users/yogeshingale/Sites/www/revive/www/admin/agency-edit.php:76)
+Jul 19 19:46:55 +0530 OX-596f54bf243da [  warning]  Cannot modify header information - headers already sent by (output started at /Users/yogeshingale/Sites/www/revive/www/admin/agency-edit.php:77)
+Jul 19 19:47:15 +0530 OX-596f54d3d2c0f [  warning]  Cannot modify header information - headers already sent by (output started at /Users/yogeshingale/Sites/www/revive/www/admin/agency-edit.php:77)
