@@ -33,6 +33,7 @@ phpAds_registerGlobalUnslashed (
 	,'email'
 	,'submit'
 	,'logout_url'
+    ,'fraud_check'
 );
 
 // Security check
@@ -62,6 +63,7 @@ else {
         $aAgency['contact']      = '';
         $aAgency['email']        = '';
         $aAgency['logout_url']   = '';
+        $aAgency['fraud_check']  = '';
     }
 }
 
@@ -94,7 +96,7 @@ function buildAgencyForm($aAgency)
     $form->addElement('text', 'name', $GLOBALS['strName']);
     $form->addElement('text', 'contact', $GLOBALS['strContact']);
     $form->addElement('text', 'email', $GLOBALS['strEMail']);
-
+    $form->addElement('text','fraud_check', $GLOBALS['strFraudCheck']);
     //we want submit to be the last element in its own separate section
     $form->addElement('controls', 'form-controls');
     $form->addElement('submit', 'submit', $GLOBALS['strSaveChanges']);
