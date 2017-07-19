@@ -707,3 +707,118 @@ Jul 19 20:11:36 +0530 OX-596f5a88855d7 [  warning]  Missing argument 3 for OA_Ad
 Jul 19 20:11:36 +0530 OX-596f5a88b0745 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 118 and defined
 Jul 19 20:11:38 +0530 OX-596f5a8a5d7b2 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 118 and defined
 Jul 19 20:12:05 +0530 OX-596f5aa597abe [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 116 and defined
+Jul 19 20:12:58 +0530 OX-596f5ada272ee [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 116 and defined
+Jul 19 20:13:02 +0530 OX-596f5addde4ec [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 116 and defined
+Jul 19 20:24:25 +0530 OX-596f5d899d845 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 116 and defined
+Jul 19 20:41:17 +0530 OX-596f617d1ad53 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 116 and defined
+Jul 19 20:55:25 +0530 OX-596f64cd4bedd [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 116 and defined
+Jul 19 20:55:33 +0530 OX-596f64d5391b0 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 116 and defined
+Jul 19 20:55:43 +0530 OX-596f64dedf03a [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 116 and defined
+Jul 19 20:55:43 +0530 OX-596f64df184dc [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 116 and defined
+Jul 19 20:55:50 +0530 OX-596f64e6b11b4 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 116 and defined
+Jul 19 20:56:09 +0530 OX-596f64f951d15 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 116 and defined
+Jul 19 20:56:37 +0530 OX-596f65152abab [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 116 and defined
+Jul 19 21:00:01 +0530 OX-596f65e17903e [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 116 and defined
+Jul 19 21:02:59 +0530 OX-596f6693c97ec [     info]  Running Automatic Maintenance Task
+ 
+ 
+Jul 19 21:03:00 +0530 OX-maintenance-596f6693c97ec [     info]  Running Maintenance Engine
+Jul 19 21:03:00 +0530 OX-maintenance-596f6693c97ec [     info]  Running Maintenance Statistics Engine
+Jul 19 21:03:00 +0530 OX-maintenance-596f6693c97ec [     info]  Task begin: OX_Maintenance_Statistics_Task_SetUpdateRequirements
+Jul 19 21:03:00 +0530 OX-maintenance-596f6693c97ec [     info]  - Maintenance statistics will NOT be run
+Jul 19 21:03:00 +0530 OX-maintenance-596f6693c97ec [     info]  Task complete: OX_Maintenance_Statistics_Task_SetUpdateRequirements
+Jul 19 21:03:00 +0530 OX-maintenance-596f6693c97ec [     info]  Task begin: OX_Maintenance_Statistics_Task_MigrateBucketData
+Jul 19 21:03:00 +0530 OX-maintenance-596f6693c97ec [     info]  Task complete: OX_Maintenance_Statistics_Task_MigrateBucketData
+Jul 19 21:03:00 +0530 OX-maintenance-596f6693c97ec [     info]  Task begin: OX_Maintenance_Statistics_Task_DeDuplicateConversions
+Jul 19 21:03:00 +0530 OX-maintenance-596f6693c97ec [     info]  Task complete: OX_Maintenance_Statistics_Task_DeDuplicateConversions
+Jul 19 21:03:00 +0530 OX-maintenance-596f6693c97ec [     info]  Task begin: OX_Maintenance_Statistics_Task_ManageConversions
+Jul 19 21:03:00 +0530 OX-maintenance-596f6693c97ec [     info]  Task complete: OX_Maintenance_Statistics_Task_ManageConversions
+Jul 19 21:03:00 +0530 OX-maintenance-596f6693c97ec [     info]  Task begin: OX_Maintenance_Statistics_Task_SummariseFinal
+Jul 19 21:03:00 +0530 OX-maintenance-596f6693c97ec [     info]  Task complete: OX_Maintenance_Statistics_Task_SummariseFinal
+Jul 19 21:03:00 +0530 OX-maintenance-596f6693c97ec [     info]  Task begin: OX_Maintenance_Statistics_Task_LogCompletion
+Jul 19 21:03:00 +0530 OX-maintenance-596f6693c97ec [     info]  Task complete: OX_Maintenance_Statistics_Task_LogCompletion
+Jul 19 21:03:00 +0530 OX-maintenance-596f6693c97ec [     info]  Task begin: OX_Maintenance_Statistics_Task_ManageCampaigns
+Jul 19 21:03:00 +0530 OX-maintenance-596f6693c97ec [     info]  Task complete: OX_Maintenance_Statistics_Task_ManageCampaigns
+Jul 19 21:03:00 +0530 OX-maintenance-596f6693c97ec [     info]  Maintenance Statistics Engine Completed (Started at 2017-07-19 14:03:00 UTC)
+Jul 19 21:03:00 +0530 OX-596f6693c97ec [     info]  Running Midnight Maintenance Tasks
+Jul 19 21:03:00 +0530 OX-596f6693c97ec [     info]  Begin pruning old records from data_summary_ad_zone_assoc
+Jul 19 21:03:00 +0530 OX-596f6693c97ec [     info]  Finished pruning old records from data_summary_ad_zone_assoc: 0 records deleted
+Jul 19 21:03:00 +0530 OX-596f6693c97ec [     info]  Begin pruning records for expired inactive campaigns from data_summary_ad_zone_assoc
+Jul 19 21:03:00 +0530 OX-596f6693c97ec [     info]  Finished pruning expired inactive campaigns from data_summary_ad_zone_assoc: 0 records deleted
+Jul 19 21:03:00 +0530 OX-596f6693c97ec [     info]  Begin pruning records for completed inactive campaigns from data_summary_ad_zone_assoc
+Jul 19 21:03:00 +0530 OX-596f6693c97ec [     info]  Table rv_data_summary_ad_zone_assoc overhead (number of allocated but unused bytes) = 0
+Jul 19 21:03:00 +0530 OX-596f6693c97ec [     info]  Midnight Maintenance Tasks Completed
+Jul 19 21:03:00 +0530 OX-maintenance-596f6693c97ec [     info]  Running Maintenance Priority Engine
+Jul 19 21:03:00 +0530 OX-maintenance-596f6693c97ec [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_GetRequiredAdImpressionsLifetime
+Jul 19 21:03:00 +0530 OX-maintenance-596f6693c97ec [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_GetRequiredAdImpressionsLifetime
+Jul 19 21:03:00 +0530 OX-maintenance-596f6693c97ec [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_GetRequiredAdImpressionsDaily
+Jul 19 21:03:00 +0530 OX-maintenance-596f6693c97ec [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_GetRequiredAdImpressionsDaily
+Jul 19 21:03:00 +0530 OX-maintenance-596f6693c97ec [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_AllocateZoneImpressions
+Jul 19 21:03:00 +0530 OX-maintenance-596f6693c97ec [     info]    - Selecting Zones forecasts for all managers for OI from 2017-07-19 14:00:00 to 2017-07-19 14:59:59
+Jul 19 21:03:00 +0530 OX-maintenance-596f6693c97ec [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_AllocateZoneImpressions
+Jul 19 21:03:00 +0530 OX-maintenance-596f6693c97ec [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_PriorityCompensation
+Jul 19 21:03:00 +0530 OX-maintenance-596f6693c97ec [     info]    - Selecting Zones forecasts for all managers for OI from 2017-07-19 14:00:00 to 2017-07-19 14:59:59
+Jul 19 21:03:00 +0530 OX-maintenance-596f6693c97ec [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_PriorityCompensation
+Jul 19 21:03:00 +0530 OX-maintenance-596f6693c97ec [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_ECPMforContract
+Jul 19 21:03:00 +0530 OX-maintenance-596f6693c97ec [     info]  - Selecting All Managers
+Jul 19 21:03:00 +0530 OX-maintenance-596f6693c97ec [     info]    - Selecting active campaigns with priority = '9' for manager 1
+Jul 19 21:03:00 +0530 OX-maintenance-596f6693c97ec [     info]    - Selecting active campaigns with priority = '8' for manager 1
+Jul 19 21:03:00 +0530 OX-maintenance-596f6693c97ec [     info]    - Selecting active campaigns with priority = '7' for manager 1
+Jul 19 21:03:00 +0530 OX-maintenance-596f6693c97ec [     info]    - Selecting active campaigns with priority = '6' for manager 1
+Jul 19 21:03:00 +0530 OX-maintenance-596f6693c97ec [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_ECPMforContract
+Jul 19 21:03:00 +0530 OX-maintenance-596f6693c97ec [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_ECPMforRemnant
+Jul 19 21:03:00 +0530 OX-maintenance-596f6693c97ec [     info]  - Selecting Managers with ECPM priority campaigns running
+Jul 19 21:03:00 +0530 OX-maintenance-596f6693c97ec [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_ECPMforRemnant
+Jul 19 21:03:00 +0530 OX-maintenance-596f6693c97ec [     info]  Maintenance Priority Engine Completed (Started at 2017-07-19 14:03:00 UTC)
+Jul 19 21:03:00 +0530 OX-maintenance-596f6693c97ec [     info]  Maintenance Engine Completed (Started at 2017-07-19 14:03:00 UTC, taking 00:00:00)
+Jul 19 21:03:00 +0530 OX-596f6693c97ec [     info]  Delaying Revive Adserver sync process by 11 seconds.
+Jul 19 21:03:11 +0530 OX-596f6693c97ec [     info]  Generating a new platform_hash for the installation
+Jul 19 21:03:15 +0530 OX-596f6693c97ec [     info]  Sync: No update
+Jul 19 21:03:15 +0530 OX-596f6693c97ec [     info]  Finished Revive Adserver Sync process.
+Jul 19 21:03:15 +0530 OX-596f6693c97ec [     info]  Automatic Maintenance Task Completed
+Jul 19 21:42:08 +0530 OX-596f6fc0add58 [     info]  Running Automatic Maintenance Task
+ 
+ 
+Jul 19 21:42:08 +0530 OX-maintenance-596f6fc0add58 [     info]  Running Maintenance Engine
+Jul 19 21:42:08 +0530 OX-maintenance-596f6fc0add58 [     info]  Running Maintenance Statistics Engine
+Jul 19 21:42:08 +0530 OX-maintenance-596f6fc0add58 [     info]  Task begin: OX_Maintenance_Statistics_Task_SetUpdateRequirements
+Jul 19 21:42:08 +0530 OX-maintenance-596f6fc0add58 [     info]  - Maintenance statistics will NOT be run
+Jul 19 21:42:08 +0530 OX-maintenance-596f6fc0add58 [     info]  Task complete: OX_Maintenance_Statistics_Task_SetUpdateRequirements
+Jul 19 21:42:08 +0530 OX-maintenance-596f6fc0add58 [     info]  Task begin: OX_Maintenance_Statistics_Task_MigrateBucketData
+Jul 19 21:42:08 +0530 OX-maintenance-596f6fc0add58 [     info]  Task complete: OX_Maintenance_Statistics_Task_MigrateBucketData
+Jul 19 21:42:08 +0530 OX-maintenance-596f6fc0add58 [     info]  Task begin: OX_Maintenance_Statistics_Task_DeDuplicateConversions
+Jul 19 21:42:08 +0530 OX-maintenance-596f6fc0add58 [     info]  Task complete: OX_Maintenance_Statistics_Task_DeDuplicateConversions
+Jul 19 21:42:08 +0530 OX-maintenance-596f6fc0add58 [     info]  Task begin: OX_Maintenance_Statistics_Task_ManageConversions
+Jul 19 21:42:08 +0530 OX-maintenance-596f6fc0add58 [     info]  Task complete: OX_Maintenance_Statistics_Task_ManageConversions
+Jul 19 21:42:08 +0530 OX-maintenance-596f6fc0add58 [     info]  Task begin: OX_Maintenance_Statistics_Task_SummariseFinal
+Jul 19 21:42:08 +0530 OX-maintenance-596f6fc0add58 [     info]  Task complete: OX_Maintenance_Statistics_Task_SummariseFinal
+Jul 19 21:42:08 +0530 OX-maintenance-596f6fc0add58 [     info]  Task begin: OX_Maintenance_Statistics_Task_LogCompletion
+Jul 19 21:42:08 +0530 OX-maintenance-596f6fc0add58 [     info]  Task complete: OX_Maintenance_Statistics_Task_LogCompletion
+Jul 19 21:42:08 +0530 OX-maintenance-596f6fc0add58 [     info]  Task begin: OX_Maintenance_Statistics_Task_ManageCampaigns
+Jul 19 21:42:08 +0530 OX-maintenance-596f6fc0add58 [     info]  Task complete: OX_Maintenance_Statistics_Task_ManageCampaigns
+Jul 19 21:42:08 +0530 OX-maintenance-596f6fc0add58 [     info]  Maintenance Statistics Engine Completed (Started at 2017-07-19 14:42:08 UTC)
+Jul 19 21:42:08 +0530 OX-maintenance-596f6fc0add58 [     info]  Running Maintenance Priority Engine
+Jul 19 21:42:08 +0530 OX-maintenance-596f6fc0add58 [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_GetRequiredAdImpressionsLifetime
+Jul 19 21:42:08 +0530 OX-maintenance-596f6fc0add58 [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_GetRequiredAdImpressionsLifetime
+Jul 19 21:42:08 +0530 OX-maintenance-596f6fc0add58 [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_GetRequiredAdImpressionsDaily
+Jul 19 21:42:08 +0530 OX-maintenance-596f6fc0add58 [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_GetRequiredAdImpressionsDaily
+Jul 19 21:42:08 +0530 OX-maintenance-596f6fc0add58 [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_AllocateZoneImpressions
+Jul 19 21:42:08 +0530 OX-maintenance-596f6fc0add58 [     info]    - Selecting Zones forecasts for all managers for OI from 2017-07-19 14:00:00 to 2017-07-19 14:59:59
+Jul 19 21:42:09 +0530 OX-maintenance-596f6fc0add58 [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_AllocateZoneImpressions
+Jul 19 21:42:09 +0530 OX-maintenance-596f6fc0add58 [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_PriorityCompensation
+Jul 19 21:42:09 +0530 OX-maintenance-596f6fc0add58 [     info]    - Selecting Zones forecasts for all managers for OI from 2017-07-19 14:00:00 to 2017-07-19 14:59:59
+Jul 19 21:42:09 +0530 OX-maintenance-596f6fc0add58 [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_PriorityCompensation
+Jul 19 21:42:09 +0530 OX-maintenance-596f6fc0add58 [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_ECPMforContract
+Jul 19 21:42:09 +0530 OX-maintenance-596f6fc0add58 [     info]  - Selecting All Managers
+Jul 19 21:42:09 +0530 OX-maintenance-596f6fc0add58 [     info]    - Selecting active campaigns with priority = '9' for manager 1
+Jul 19 21:42:09 +0530 OX-maintenance-596f6fc0add58 [     info]    - Selecting active campaigns with priority = '8' for manager 1
+Jul 19 21:42:09 +0530 OX-maintenance-596f6fc0add58 [     info]    - Selecting active campaigns with priority = '7' for manager 1
+Jul 19 21:42:09 +0530 OX-maintenance-596f6fc0add58 [     info]    - Selecting active campaigns with priority = '6' for manager 1
+Jul 19 21:42:09 +0530 OX-maintenance-596f6fc0add58 [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_ECPMforContract
+Jul 19 21:42:09 +0530 OX-maintenance-596f6fc0add58 [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_ECPMforRemnant
+Jul 19 21:42:09 +0530 OX-maintenance-596f6fc0add58 [     info]  - Selecting Managers with ECPM priority campaigns running
+Jul 19 21:42:09 +0530 OX-maintenance-596f6fc0add58 [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_ECPMforRemnant
+Jul 19 21:42:09 +0530 OX-maintenance-596f6fc0add58 [     info]  Maintenance Priority Engine Completed (Started at 2017-07-19 14:42:08 UTC)
+Jul 19 21:42:09 +0530 OX-maintenance-596f6fc0add58 [     info]  Maintenance Engine Completed (Started at 2017-07-19 14:42:08 UTC, taking 00:00:01)
+Jul 19 21:42:09 +0530 OX-596f6fc0add58 [     info]  Automatic Maintenance Task Completed
+Jul 19 21:49:47 +0530 OX-596f718b0c810 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 116 and defined

@@ -113,7 +113,6 @@ function buildWebsiteForm($affiliate)
     $emailRequiredMsg = $translation->translate($GLOBALS['strXRequiredField'], array($GLOBALS['strEMail']));
     $form->addRule('email', $emailRequiredMsg, 'required');
     $form->addRule('email', $GLOBALS['strEmailField'], 'email');
-    $form->addRule('threshold', $GLOBALS['strThreshold']);
     
 
 
