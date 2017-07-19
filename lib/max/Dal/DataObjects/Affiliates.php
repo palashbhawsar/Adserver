@@ -44,6 +44,8 @@ class DataObjects_Affiliates extends DB_DataObjectCommon
     public $oac_language_id;                 // INT(11) => openads_int => 1 
     public $oac_category_id;                 // INT(11) => openads_int => 1 
     public $account_id;                      // MEDIUMINT(9) => openads_mediumint => 1 
+    public $fraud_status;                    // TINYINT(1) => openads_tinyint => 1 
+    public $threshold;                      // INT(4) => openads_int => 1 
 
     /* Static get */
     function staticGet($k,$v=NULL) { return DB_DataObject::staticGetFromClassName('DataObjects_Affiliates',$k,$v); }
@@ -55,6 +57,8 @@ class DataObjects_Affiliates extends DB_DataObjectCommon
                 'email' => '',
                 'updated' => '%DATE_TIME%',
                 'oac_country_code' => '',
+                'fraud_status' => 0,
+                'threshold' => 0,
                 );
 
     /* the code above is auto generated do not remove the tag below */
@@ -135,12 +139,15 @@ class DataObjects_Affiliates extends DB_DataObjectCommon
         }
 
         // Store data to create a user
+      
         if (!empty($this->username) && !empty($this->password)) {
             $aUser = array(
                 'contact_name' => $this->contact,
                 'email_address' => $this->email,
                 'username' => $this->username,
                 'password' => $this->password,
+                'fraud_status' => $this->fraud_status,
+                'threshold' => $this->threshold,
                 'default_account_id' => $this->account_id
             );
         }
@@ -172,6 +179,8 @@ class DataObjects_Affiliates extends DB_DataObjectCommon
                 'email_address' => $this->email,
                 'username' => $this->username,
                 'password' => $this->password,
+                 'fraud_status' => $this->fraud_status,
+                'threshold' => $this->threshold,
                 'default_account_id' => $this->account_id
             );
         }

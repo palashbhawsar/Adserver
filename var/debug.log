@@ -474,3 +474,167 @@ Jul 19 15:22:40 +0530 OX-plugins-596f16d00ce17 [    error]  Failed to initialise
 Jul 19 15:22:40 +0530 OX-plugins-596f16d00ce17 [    error]  Failed to drop tables for vastInlineBannerTypeHtml
 Jul 19 15:22:40 +0530 OX-plugins-596f16d00ce17 [    error]  Task failed _unregisterSchema
 Jul 19 15:22:40 +0530 OX-plugins-596f16d00ce17 [    error]  Failed to uninstall vastInlineBannerTypeHtml
+Jul 19 17:21:26 +0530 OX-596f32a5c6293 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 17:21:28 +0530 OX-596f32a80ab78 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 17:21:28 +0530 OX-596f32a8338b2 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 17:21:37 +0530 OX-596f32b198d19 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 17:21:37 +0530 OX-596f32b1c0d10 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 17:22:16 +0530 OX-596f32d8145c6 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 17:22:21 +0530 OX-596f32dd91568 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 17:22:21 +0530 OX-596f32ddba0e1 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 17:22:25 +0530 OX-596f32e11fbb4 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 17:22:37 +0530 OX-596f32ed708de [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 17:22:39 +0530 OX-596f32efae536 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 17:22:41 +0530 OX-596f32f19957c [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 17:22:44 +0530 OX-596f32f45a0e2 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 17:22:46 +0530 OX-596f32f64adc4 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 17:22:54 +0530 OX-596f32feb6abd [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 17:22:57 +0530 OX-596f33012d4a0 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 17:23:03 +0530 OX-596f33074cc03 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 17:25:19 +0530 OX-596f338ef04bc [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 17:25:19 +0530 OX-596f338ef04bc [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 121 and defined
+Jul 19 17:29:45 +0530 OX-596f3499bf951 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 17:29:45 +0530 OX-596f3499bf951 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 121 and defined
+Jul 19 17:30:13 +0530 OX-596f34b595b5d [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 121 and defined
+Jul 19 17:34:25 +0530 OX-596f35b17cf50 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 126 and defined
+Jul 19 17:34:53 +0530 OX-596f35ccc32cc [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 125 and defined
+Jul 19 17:35:14 +0530 OX-596f35e28a8ef [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 126 and defined
+Jul 19 17:35:14 +0530 OX-596f35e28a8ef [  warning]  strlen() expects parameter 1 to be string, array given
+Jul 19 17:35:21 +0530 OX-596f35e9d1e44 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 125 and defined
+Jul 19 17:35:22 +0530 OX-596f35e9d1e44 [  warning]  strlen() expects parameter 1 to be string, array given
+Jul 19 17:35:31 +0530 OX-596f35f361c47 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 125 and defined
+Jul 19 17:35:31 +0530 OX-596f35f361c47 [  warning]  strlen() expects parameter 1 to be string, array given
+Jul 19 17:35:37 +0530 OX-596f35f9cbf82 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 125 and defined
+Jul 19 17:35:38 +0530 OX-596f35fa0853e [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 125 and defined
+Jul 19 17:35:38 +0530 OX-596f35fa0853e [  warning]  strlen() expects parameter 1 to be string, array given
+Jul 19 17:35:40 +0530 OX-596f35fbe9617 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 125 and defined
+Jul 19 17:35:40 +0530 OX-596f35fc1e63a [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 125 and defined
+Jul 19 17:35:40 +0530 OX-596f35fc1e63a [  warning]  strlen() expects parameter 1 to be string, array given
+Jul 19 17:40:57 +0530 OX-596f373946f60 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 125 and defined
+Jul 19 17:40:57 +0530 OX-596f373946f60 [  warning]  strlen() expects parameter 1 to be string, array given
+Jul 19 17:41:09 +0530 OX-596f37453b542 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 125 and defined
+Jul 19 17:41:09 +0530 OX-596f37453b542 [  warning]  strlen() expects parameter 1 to be string, array given
+Jul 19 17:46:13 +0530 OX-596f38752adf8 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 125 and defined
+Jul 19 17:46:13 +0530 OX-596f38752adf8 [  warning]  strlen() expects parameter 1 to be string, array given
+Jul 19 17:47:00 +0530 OX-596f38a4573d7 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 125 and defined
+Jul 19 17:47:00 +0530 OX-596f38a4573d7 [  warning]  strlen() expects parameter 1 to be string, array given
+Jul 19 17:47:34 +0530 OX-596f38c66ff82 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 126 and defined
+Jul 19 17:47:34 +0530 OX-596f38c66ff82 [  warning]  strlen() expects parameter 1 to be string, array given
+Jul 19 17:48:27 +0530 OX-596f38fb8cddd [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 126 and defined
+Jul 19 17:48:27 +0530 OX-596f38fb8cddd [  warning]  strlen() expects parameter 1 to be string, array given
+Jul 19 17:48:45 +0530 OX-596f390d156bf [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 126 and defined
+Jul 19 17:48:45 +0530 OX-596f390d156bf [  warning]  strlen() expects parameter 1 to be string, array given
+Jul 19 17:52:08 +0530 OX-596f39d8a0665 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 126 and defined
+Jul 19 17:55:10 +0530 OX-596f3a8e58638 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 129 and defined
+Jul 19 17:55:33 +0530 OX-596f3aa5cd132 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 126 and defined
+Jul 19 17:55:34 +0530 OX-596f3aa5cd132 [  warning]  strlen() expects parameter 1 to be string, array given
+Jul 19 17:55:39 +0530 OX-596f3aab14799 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 127 and defined
+Jul 19 17:55:39 +0530 OX-596f3aab14799 [  warning]  strlen() expects parameter 1 to be string, array given
+Jul 19 17:57:13 +0530 OX-596f3b09a4b27 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 127 and defined
+Jul 19 17:58:09 +0530 OX-596f3b41a0091 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 127 and defined
+Jul 19 17:59:13 +0530 OX-596f3b80ca4f1 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 127 and defined
+Jul 19 18:20:18 +0530 OX-596f407223310 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 127 and defined
+Jul 19 18:21:03 +0530 OX-596f409f40942 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 127 and defined
+Jul 19 18:21:10 +0530 OX-596f40a639f70 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 127 and defined
+Jul 19 18:21:16 +0530 OX-596f40ac2ddd7 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 127 and defined
+Jul 19 18:21:16 +0530 OX-596f40ac2ddd7 [  warning]  strlen() expects parameter 1 to be string, array given
+Jul 19 18:21:17 +0530 OX-596f40ad85147 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 127 and defined
+Jul 19 18:21:17 +0530 OX-596f40ad85147 [  warning]  strlen() expects parameter 1 to be string, array given
+Jul 19 18:21:22 +0530 OX-596f40b236950 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 127 and defined
+Jul 19 18:21:22 +0530 OX-596f40b277610 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 127 and defined
+Jul 19 18:21:22 +0530 OX-596f40b277610 [  warning]  strlen() expects parameter 1 to be string, array given
+Jul 19 18:21:28 +0530 OX-596f40b7de6d4 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 127 and defined
+Jul 19 18:21:28 +0530 OX-596f40b82878b [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 127 and defined
+Jul 19 18:21:28 +0530 OX-596f40b82878b [  warning]  strlen() expects parameter 1 to be string, array given
+Jul 19 18:22:29 +0530 OX-596f40f530a68 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 127 and defined
+Jul 19 18:22:29 +0530 OX-596f40f530a68 [  warning]  strlen() expects parameter 1 to be string, array given
+Jul 19 18:22:32 +0530 OX-596f40f81459c [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 127 and defined
+Jul 19 18:22:32 +0530 OX-596f40f854048 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 127 and defined
+Jul 19 18:22:32 +0530 OX-596f40f854048 [  warning]  strlen() expects parameter 1 to be string, array given
+Jul 19 18:22:43 +0530 OX-596f4102ca598 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 127 and defined
+Jul 19 18:22:43 +0530 OX-596f410310dc2 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 127 and defined
+Jul 19 18:22:43 +0530 OX-596f410310dc2 [  warning]  strlen() expects parameter 1 to be string, array given
+Jul 19 18:23:30 +0530 OX-596f4132b28be [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 127 and defined
+Jul 19 18:23:30 +0530 OX-596f4132b28be [  warning]  strlen() expects parameter 1 to be string, array given
+Jul 19 18:23:34 +0530 OX-596f41367a54c [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 127 and defined
+Jul 19 18:23:34 +0530 OX-596f4136b226e [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 127 and defined
+Jul 19 18:23:34 +0530 OX-596f4136b226e [  warning]  strlen() expects parameter 1 to be string, array given
+Jul 19 18:23:44 +0530 OX-596f414012fa1 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 127 and defined
+Jul 19 18:23:44 +0530 OX-596f41403f485 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 127 and defined
+Jul 19 18:23:44 +0530 OX-596f41403f485 [  warning]  strlen() expects parameter 1 to be string, array given
+Jul 19 18:24:18 +0530 OX-596f4161dc43f [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 127 and defined
+Jul 19 18:24:18 +0530 OX-596f4161dc43f [  warning]  strlen() expects parameter 1 to be string, array given
+Jul 19 18:24:24 +0530 OX-596f41688b77e [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 127 and defined
+Jul 19 18:24:24 +0530 OX-596f4168ba3c8 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 127 and defined
+Jul 19 18:24:24 +0530 OX-596f4168ba3c8 [  warning]  strlen() expects parameter 1 to be string, array given
+Jul 19 18:24:41 +0530 OX-596f4178f23ae [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 127 and defined
+Jul 19 18:24:41 +0530 OX-596f41792a3ac [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 127 and defined
+Jul 19 18:24:41 +0530 OX-596f41792a3ac [  warning]  strlen() expects parameter 1 to be string, array given
+Jul 19 18:24:46 +0530 OX-596f417e0e859 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 127 and defined
+Jul 19 18:24:46 +0530 OX-596f417e39d90 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 127 and defined
+Jul 19 18:24:46 +0530 OX-596f417e39d90 [  warning]  strlen() expects parameter 1 to be string, array given
+Jul 19 18:25:01 +0530 OX-596f418d67dff [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 127 and defined
+Jul 19 18:25:01 +0530 OX-596f418d946cd [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 127 and defined
+Jul 19 18:25:01 +0530 OX-596f418d946cd [  warning]  strlen() expects parameter 1 to be string, array given
+Jul 19 18:25:20 +0530 OX-596f41a084003 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 127 and defined
+Jul 19 18:25:20 +0530 OX-596f41a0b4439 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 127 and defined
+Jul 19 18:25:20 +0530 OX-596f41a0b4439 [  warning]  strlen() expects parameter 1 to be string, array given
+Jul 19 18:25:55 +0530 OX-596f41c36dad7 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 126 and defined
+Jul 19 18:25:55 +0530 OX-596f41c36dad7 [  warning]  strlen() expects parameter 1 to be string, array given
+Jul 19 18:25:59 +0530 OX-596f41c6dcdd5 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 126 and defined
+Jul 19 18:25:59 +0530 OX-596f41c714929 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 126 and defined
+Jul 19 18:25:59 +0530 OX-596f41c714929 [  warning]  strlen() expects parameter 1 to be string, array given
+Jul 19 18:26:10 +0530 OX-596f41d25660c [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 126 and defined
+Jul 19 18:26:10 +0530 OX-596f41d288d16 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 126 and defined
+Jul 19 18:26:10 +0530 OX-596f41d288d16 [  warning]  strlen() expects parameter 1 to be string, array given
+Jul 19 18:26:36 +0530 OX-596f41ec64a26 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 126 and defined
+Jul 19 18:26:36 +0530 OX-596f41ec936c9 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 126 and defined
+Jul 19 18:26:36 +0530 OX-596f41ec936c9 [  warning]  strlen() expects parameter 1 to be string, array given
+Jul 19 18:28:04 +0530 OX-596f4244579c8 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 126 and defined
+Jul 19 18:28:04 +0530 OX-596f4244579c8 [  warning]  Cannot modify header information - headers already sent by (output started at /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php:75)
+Jul 19 18:28:04 +0530 OX-596f4244579c8 [  warning]  strlen() expects parameter 1 to be string, array given
+Jul 19 18:28:15 +0530 OX-596f424f9019d [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 127 and defined
+Jul 19 18:28:15 +0530 OX-596f424f9019d [  warning]  Cannot modify header information - headers already sent by (output started at /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php:76)
+Jul 19 18:28:15 +0530 OX-596f424f9019d [  warning]  strlen() expects parameter 1 to be string, array given
+Jul 19 18:29:06 +0530 OX-596f4281da127 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 122 and defined
+Jul 19 18:29:06 +0530 OX-596f4281da127 [  warning]  Cannot modify header information - headers already sent by (output started at /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php:76)
+Jul 19 18:29:15 +0530 OX-596f428ae3490 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 122 and defined
+Jul 19 18:29:15 +0530 OX-596f428ae3490 [  warning]  Cannot modify header information - headers already sent by (output started at /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php:76)
+Jul 19 18:29:41 +0530 OX-596f42a51fbe9 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 122 and defined
+Jul 19 18:29:41 +0530 OX-596f42a51fbe9 [  warning]  Cannot modify header information - headers already sent by (output started at /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php:76)
+Jul 19 18:29:58 +0530 OX-596f42b626409 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 122 and defined
+Jul 19 18:29:58 +0530 OX-596f42b626409 [  warning]  Cannot modify header information - headers already sent by (output started at /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php:76)
+Jul 19 18:30:04 +0530 OX-596f42bcc83f9 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 122 and defined
+Jul 19 18:30:05 +0530 OX-596f42bcc83f9 [  warning]  Cannot modify header information - headers already sent by (output started at /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php:76)
+Jul 19 18:36:04 +0530 OX-596f442458add [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 18:36:06 +0530 OX-596f4425d8886 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 18:36:08 +0530 OX-596f44283d374 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 18:36:08 +0530 OX-596f442866272 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 18:38:17 +0530 OX-596f44a9a09c9 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 18:38:21 +0530 OX-596f44ad4a191 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 18:38:21 +0530 OX-596f44ad73983 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 18:38:26 +0530 OX-596f44b1f39f5 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 18:38:40 +0530 OX-596f44c026a99 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 18:38:50 +0530 OX-596f44cab086c [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 18:38:53 +0530 OX-596f44cd629c8 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 18:39:06 +0530 OX-596f44da306f9 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 18:39:14 +0530 OX-596f44e1e1041 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 18:40:03 +0530 OX-596f45133d5ca [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 18:40:26 +0530 OX-596f4529e11c2 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 18:42:36 +0530 OX-596f45ac4fcf2 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 18:42:39 +0530 OX-596f45af23ec7 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 18:42:52 +0530 OX-596f45bc38e66 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 18:43:16 +0530 OX-596f45d3f4130 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 18:43:24 +0530 OX-596f45dc06d8b [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 18:43:26 +0530 OX-596f45de92692 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 18:43:30 +0530 OX-596f45e28c4e7 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 18:43:30 +0530 OX-596f45e2b5560 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 18:43:39 +0530 OX-596f45ebb1f67 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 18:43:44 +0530 OX-596f45f0433af [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 18:43:47 +0530 OX-596f45f35bb88 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 18:43:47 +0530 OX-596f45f3840c2 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 18:43:49 +0530 OX-596f45f57b233 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 18:43:51 +0530 OX-596f45f79a01d [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 18:43:51 +0530 OX-596f45f7c20fa [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 18:43:53 +0530 OX-596f45f919569 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
+Jul 19 18:43:58 +0530 OX-596f45fde9657 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 120 and defined
