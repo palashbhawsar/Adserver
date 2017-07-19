@@ -1,0 +1,1 @@
+8b75e67ce53d41e9ab2d91325c15d92fa:3:{s:8:"postInit";a:1:{i:0;s:41:"deliveryLimitations:Client:initClientData";}s:10:"cacheStore";a:2:{i:0;s:42:"deliveryCacheStore:oxCacheFile:oxCacheFile";i:1;s:42:"deliveryCacheStore:oxMemcached:oxMemcached";}s:13:"cacheRetrieve";a:2:{i:0;s:42:"deliveryCacheStore:oxCacheFile:oxCacheFile";i:1;s:42:"deliveryCacheStore:oxMemcached:oxMemcached";}}
