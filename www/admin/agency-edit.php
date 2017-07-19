@@ -33,7 +33,7 @@ phpAds_registerGlobalUnslashed (
 	,'email'
 	,'submit'
 	,'logout_url'
-    ,'fraud_check'
+    ,'fraud_status'
 );
 
 // Security check
@@ -63,7 +63,7 @@ else {
         $aAgency['contact']      = '';
         $aAgency['email']        = '';
         $aAgency['logout_url']   = '';
-        $aAgency['fraud_check']  = '';
+        
     }
 }
 
@@ -96,7 +96,7 @@ function buildAgencyForm($aAgency)
     $form->addElement('text', 'name', $GLOBALS['strName']);
     $form->addElement('text', 'contact', $GLOBALS['strContact']);
     $form->addElement('text', 'email', $GLOBALS['strEMail']);
-    $form->addElement('CheckBox','fraud_check', $GLOBALS['strFraudCheck']);
+     $form->addElement('checkbox', 'fraud_status', $GLOBALS['strFraudCheck']);
     //we want submit to be the last element in its own separate section
     $form->addElement('controls', 'form-controls');
     $form->addElement('submit', 'submit', $GLOBALS['strSaveChanges']);
@@ -113,8 +113,7 @@ function buildAgencyForm($aAgency)
     $form->addRule('email', $emailRequiredMsg, 'required');
     $form->addRule('email', $GLOBALS['strEmailField'], 'email');
     
-    $fraud_checkRequiredMsg = $translation->translate($GLOBALS['strXRequiredField'],
-    array($GLOBALS['strFraudCheck']));
+    
     
 
     //set form  values
@@ -140,7 +139,7 @@ function processForm($aAgency, $form)
     // Default fields
     $agency['contact']        = $aFields['contact'];
     $agency['email']          = $aFields['email'];
-    $agency['fraud_check']    = $aFields['fraud_check'];
+     $agency['fraud_status'] = $aFields['fraud_status'];
     $agency['logout_url']     = $aFields['logout_url'];
 
     // Permissions

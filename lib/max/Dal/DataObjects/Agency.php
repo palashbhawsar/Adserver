@@ -39,7 +39,7 @@ class DataObjects_Agency extends DB_DataObjectCommon
     public $active;                          // SMALLINT(1) => openads_smallint => 17 
     public $updated;                         // DATETIME() => openads_datetime => 142 
     public $account_id;                      // MEDIUMINT(9) => openads_mediumint => 1 
-
+ public $fraud_status;                    // SMALLINT(1) => openads_smallint => 1
     /* Static get */
     function staticGet($k,$v=NULL) { return DB_DataObject::staticGetFromClassName('DataObjects_Agency',$k,$v); }
 
@@ -48,6 +48,7 @@ class DataObjects_Agency extends DB_DataObjectCommon
                 'email' => '',
                 'active' => 0,
                 'updated' => '%DATE_TIME%',
+          'fraud_status' => 0,
                 );
 
     /* the code above is auto generated do not remove the tag below */
@@ -73,7 +74,9 @@ class DataObjects_Agency extends DB_DataObjectCommon
                 'email_address' => $this->email,
                 'username' => $this->username,
                 'password' => $this->password,
-                'default_account_id' => $this->account_id
+                'default_account_id' => $this->account_id,
+                 'fraud_status' => $this->fraud_status
+                
             );
         }
 
@@ -113,7 +116,8 @@ class DataObjects_Agency extends DB_DataObjectCommon
                 'email_address' => $this->email,
                 'username' => $this->username,
                 'password' => $this->password,
-                'default_account_id' => $this->account_id
+                'default_account_id' => $this->account_id,
+                'fraud_status' => $this->fraud_status
             );
         }
 
