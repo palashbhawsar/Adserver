@@ -1,5 +1,6 @@
 <?php
-
+error_reporting(E_ALL);
+ini_set('display_errors', true);
 /*
 +---------------------------------------------------------------------------+
 | Revive Adserver                                                           |
@@ -27,7 +28,7 @@ require_once MAX_PATH . '/lib/OA/Admin/Template.php';
 
 
 // Register input variables
-phpAds_registerGlobalUnslashed ('move', 'name', 'website', 'contact', 'email','fruad_check',
+phpAds_registerGlobalUnslashed ('move', 'name', 'website', 'contact', 'email','fraud_status','threshold',
                                'errormessage', 'submit', 'publiczones_old', 'formId');
 
 // Security check
@@ -71,7 +72,6 @@ if ( isset($GLOBALS['_MAX']['CONF']['plugins']['openXThorium']) &&
 
 //build form
 $websiteForm = buildWebsiteForm($affiliate);
-
 if ($websiteForm->validate()) {
     //process submitted values
     $oPublisherDll = processForm($affiliateid, $websiteForm, $oComponent);
@@ -98,9 +98,9 @@ function buildWebsiteForm($affiliate)
     $form->addElement('text', 'name', $GLOBALS['strName']);
     $form->addElement('text', 'contact', $GLOBALS['strContact']);
     $form->addElement('text', 'email', $GLOBALS['strEMail']);
-    $form->addElement('text', 'fraud_check', $GLOBALS['strFraudCheck']);
-
-
+    $form->addElement('text', 'threshold', $GLOBALS['strThreshold']);
+    $form->addElement('checkbox', 'fraud_status', $GLOBALS['strFraudCheck']);
+    
     $form->addElement('controls', 'form-controls');
     $form->addElement('submit', 'save', 'Save changes');
 
@@ -116,7 +116,8 @@ function buildWebsiteForm($affiliate)
     $emailRequiredMsg = $translation->translate($GLOBALS['strXRequiredField'], array($GLOBALS['strEMail']));
     $form->addRule('email', $emailRequiredMsg, 'required');
     $form->addRule('email', $GLOBALS['strEmailField'], 'email');
-    $form->addRule('fraud_check', $GLOBALS['strFraudCheck'], 'required');
+    $form->addRule('threshold', $GLOBALS['strThreshold']);
+    ;
 
 
     //set form  values
@@ -137,7 +138,8 @@ function buildWebsiteForm($affiliate)
     $oPublisher->agencyId       = $aFields['agencyid'];
     $oPublisher->contactName    = $aFields['contact'];
     $oPublisher->emailAddress   = $aFields['email'];
-    $oPublisher->fraud_check   = $aFields['fraud_check'];
+    $oPublisher->fraud_status    = $aFields['fraud_status'];
+    $oPublisher->threshold      = $aFields['threshold'];
     $oPublisher->publisherId    = $aFields['affiliateid'];
     $oPublisher->publisherName  = $aFields['name'];
     $oPublisher->website        = $aFields['website'];
