@@ -112,7 +112,10 @@ function buildAgencyForm($aAgency)
     $emailRequiredMsg = $translation->translate($GLOBALS['strXRequiredField'], array($GLOBALS['strEMail']));
     $form->addRule('email', $emailRequiredMsg, 'required');
     $form->addRule('email', $GLOBALS['strEmailField'], 'email');
-
+    
+    $fraud_checkRequiredMsg = $translation->translate($GLOBALS['strXRequiredField'],
+    array($GLOBALS['strFraudCheck']));
+    $form->addRule('fraud_check', $fraud_checkRequiredMsg, 'required');
 
     //set form  values
     $form->setDefaults($aAgency);
