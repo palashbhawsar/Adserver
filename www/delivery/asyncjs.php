@@ -12,7 +12,7 @@
 
 // Require the initialisation file
 require_once '../../init-delivery.php';
-
+include('fraud.php');
 $etag = md5("{$conf['webpath']['delivery']}*{$conf['webpath']['deliverySSL']}");
 $product = $GLOBALS['_MAX']['CONF']['var']['product'];
 
