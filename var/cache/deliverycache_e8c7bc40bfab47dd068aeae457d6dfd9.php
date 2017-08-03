@@ -28,7 +28,7 @@ $cache_contents   = array (
     'default_banner_destination_url' => '',
   ),
   'cache_name' => 'zoneinfo^2@reviveads.com',
-  'cache_time' => 1500475328,
+  'cache_time' => 1501497473,
   'cache_expire' => NULL,
 );
 

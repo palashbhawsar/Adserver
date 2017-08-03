@@ -822,3 +822,146 @@ Jul 19 21:42:09 +0530 OX-maintenance-596f6fc0add58 [     info]  Maintenance Prio
 Jul 19 21:42:09 +0530 OX-maintenance-596f6fc0add58 [     info]  Maintenance Engine Completed (Started at 2017-07-19 14:42:08 UTC, taking 00:00:01)
 Jul 19 21:42:09 +0530 OX-596f6fc0add58 [     info]  Automatic Maintenance Task Completed
 Jul 19 21:49:47 +0530 OX-596f718b0c810 [  warning]  Missing argument 3 for OA_Admin_UI_Component_Form::addRule(), called in /Users/yogeshingale/Sites/www/revive/www/admin/affiliate-edit.php on line 116 and defined
+ 
+Jul 19 22:37:27 +0530 OX-maintenance-596f7cb70eff1 [     info]  Running Maintenance Priority Engine
+Jul 19 22:37:27 +0530 OX-maintenance-596f7cb70eff1 [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_GetRequiredAdImpressionsLifetime
+Jul 19 22:37:27 +0530 OX-maintenance-596f7cb70eff1 [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_GetRequiredAdImpressionsLifetime
+Jul 19 22:37:27 +0530 OX-maintenance-596f7cb70eff1 [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_GetRequiredAdImpressionsDaily
+Jul 19 22:37:27 +0530 OX-maintenance-596f7cb70eff1 [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_GetRequiredAdImpressionsDaily
+Jul 19 22:37:27 +0530 OX-maintenance-596f7cb70eff1 [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_AllocateZoneImpressions
+Jul 19 22:37:27 +0530 OX-maintenance-596f7cb70eff1 [     info]    - Selecting Zones forecasts for all managers for OI from 2017-07-19 15:00:00 to 2017-07-19 15:59:59
+Jul 19 22:37:27 +0530 OX-maintenance-596f7cb70eff1 [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_AllocateZoneImpressions
+Jul 19 22:37:27 +0530 OX-maintenance-596f7cb70eff1 [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_PriorityCompensation
+Jul 19 22:37:27 +0530 OX-maintenance-596f7cb70eff1 [     info]    - Selecting Zones forecasts for all managers for OI from 2017-07-19 15:00:00 to 2017-07-19 15:59:59
+Jul 19 22:37:27 +0530 OX-maintenance-596f7cb70eff1 [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_PriorityCompensation
+Jul 19 22:37:27 +0530 OX-maintenance-596f7cb70eff1 [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_ECPMforContract
+Jul 19 22:37:27 +0530 OX-maintenance-596f7cb70eff1 [     info]  - Selecting All Managers
+Jul 19 22:37:27 +0530 OX-maintenance-596f7cb70eff1 [     info]    - Selecting active campaigns with priority = '9' for manager 1
+Jul 19 22:37:27 +0530 OX-maintenance-596f7cb70eff1 [     info]    - Selecting active campaigns with priority = '8' for manager 1
+Jul 19 22:37:27 +0530 OX-maintenance-596f7cb70eff1 [     info]    - Selecting active campaigns with priority = '7' for manager 1
+Jul 19 22:37:27 +0530 OX-maintenance-596f7cb70eff1 [     info]    - Selecting active campaigns with priority = '6' for manager 1
+Jul 19 22:37:27 +0530 OX-maintenance-596f7cb70eff1 [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_ECPMforContract
+Jul 19 22:37:27 +0530 OX-maintenance-596f7cb70eff1 [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_ECPMforRemnant
+Jul 19 22:37:27 +0530 OX-maintenance-596f7cb70eff1 [     info]  - Selecting Managers with ECPM priority campaigns running
+Jul 19 22:37:27 +0530 OX-maintenance-596f7cb70eff1 [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_ECPMforRemnant
+Jul 19 22:37:27 +0530 OX-maintenance-596f7cb70eff1 [     info]  Maintenance Priority Engine Completed (Started at 2017-07-19 22:37:27 ICT)
+ 
+Jul 20 15:02:00 +0530 OX-maintenance-59706378ceb42 [     info]  Running Maintenance Priority Engine
+Jul 20 15:02:00 +0530 OX-maintenance-59706378ceb42 [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_GetRequiredAdImpressionsLifetime
+Jul 20 15:02:00 +0530 OX-maintenance-59706378ceb42 [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_GetRequiredAdImpressionsLifetime
+Jul 20 15:02:00 +0530 OX-maintenance-59706378ceb42 [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_GetRequiredAdImpressionsDaily
+Jul 20 15:02:00 +0530 OX-maintenance-59706378ceb42 [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_GetRequiredAdImpressionsDaily
+Jul 20 15:02:00 +0530 OX-maintenance-59706378ceb42 [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_AllocateZoneImpressions
+Jul 20 15:02:00 +0530 OX-maintenance-59706378ceb42 [     info]    - Selecting Zones forecasts for all managers for OI from 2017-07-20 08:00:00 to 2017-07-20 08:59:59
+Jul 20 15:02:01 +0530 OX-maintenance-59706378ceb42 [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_AllocateZoneImpressions
+Jul 20 15:02:01 +0530 OX-maintenance-59706378ceb42 [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_PriorityCompensation
+Jul 20 15:02:01 +0530 OX-maintenance-59706378ceb42 [     info]    - Selecting Zones forecasts for all managers for OI from 2017-07-20 08:00:00 to 2017-07-20 08:59:59
+Jul 20 15:02:01 +0530 OX-maintenance-59706378ceb42 [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_PriorityCompensation
+Jul 20 15:02:01 +0530 OX-maintenance-59706378ceb42 [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_ECPMforContract
+Jul 20 15:02:01 +0530 OX-maintenance-59706378ceb42 [     info]  - Selecting All Managers
+Jul 20 15:02:01 +0530 OX-maintenance-59706378ceb42 [     info]    - Selecting active campaigns with priority = '9' for manager 1
+Jul 20 15:02:01 +0530 OX-maintenance-59706378ceb42 [     info]    - Selecting active campaigns with priority = '8' for manager 1
+Jul 20 15:02:01 +0530 OX-maintenance-59706378ceb42 [     info]    - Selecting active campaigns with priority = '7' for manager 1
+Jul 20 15:02:01 +0530 OX-maintenance-59706378ceb42 [     info]    - Selecting active campaigns with priority = '6' for manager 1
+Jul 20 15:02:01 +0530 OX-maintenance-59706378ceb42 [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_ECPMforContract
+Jul 20 15:02:01 +0530 OX-maintenance-59706378ceb42 [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_ECPMforRemnant
+Jul 20 15:02:01 +0530 OX-maintenance-59706378ceb42 [     info]  - Selecting Managers with ECPM priority campaigns running
+Jul 20 15:02:01 +0530 OX-maintenance-59706378ceb42 [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_ECPMforRemnant
+Jul 20 15:02:01 +0530 OX-maintenance-59706378ceb42 [     info]  Maintenance Priority Engine Completed (Started at 2017-07-20 15:02:00 ICT)
+ 
+Jul 20 15:02:37 +0530 OX-maintenance-5970639d2099f [     info]  Running Maintenance Priority Engine
+Jul 20 15:02:37 +0530 OX-maintenance-5970639d2099f [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_GetRequiredAdImpressionsLifetime
+Jul 20 15:02:37 +0530 OX-maintenance-5970639d2099f [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_GetRequiredAdImpressionsLifetime
+Jul 20 15:02:37 +0530 OX-maintenance-5970639d2099f [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_GetRequiredAdImpressionsDaily
+Jul 20 15:02:37 +0530 OX-maintenance-5970639d2099f [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_GetRequiredAdImpressionsDaily
+Jul 20 15:02:37 +0530 OX-maintenance-5970639d2099f [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_AllocateZoneImpressions
+Jul 20 15:02:37 +0530 OX-maintenance-5970639d2099f [     info]    - Selecting Zones forecasts for all managers for OI from 2017-07-20 08:00:00 to 2017-07-20 08:59:59
+Jul 20 15:02:37 +0530 OX-maintenance-5970639d2099f [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_AllocateZoneImpressions
+Jul 20 15:02:37 +0530 OX-maintenance-5970639d2099f [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_PriorityCompensation
+Jul 20 15:02:37 +0530 OX-maintenance-5970639d2099f [     info]    - Selecting Zones forecasts for all managers for OI from 2017-07-20 08:00:00 to 2017-07-20 08:59:59
+Jul 20 15:02:37 +0530 OX-maintenance-5970639d2099f [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_PriorityCompensation
+Jul 20 15:02:37 +0530 OX-maintenance-5970639d2099f [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_ECPMforContract
+Jul 20 15:02:37 +0530 OX-maintenance-5970639d2099f [     info]  - Selecting All Managers
+Jul 20 15:02:37 +0530 OX-maintenance-5970639d2099f [     info]    - Selecting active campaigns with priority = '9' for manager 1
+Jul 20 15:02:37 +0530 OX-maintenance-5970639d2099f [     info]    - Selecting active campaigns with priority = '8' for manager 1
+Jul 20 15:02:37 +0530 OX-maintenance-5970639d2099f [     info]    - Selecting active campaigns with priority = '7' for manager 1
+Jul 20 15:02:37 +0530 OX-maintenance-5970639d2099f [     info]    - Selecting active campaigns with priority = '6' for manager 1
+Jul 20 15:02:37 +0530 OX-maintenance-5970639d2099f [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_ECPMforContract
+Jul 20 15:02:37 +0530 OX-maintenance-5970639d2099f [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_ECPMforRemnant
+Jul 20 15:02:37 +0530 OX-maintenance-5970639d2099f [     info]  - Selecting Managers with ECPM priority campaigns running
+Jul 20 15:02:37 +0530 OX-maintenance-5970639d2099f [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_ECPMforRemnant
+Jul 20 15:02:37 +0530 OX-maintenance-5970639d2099f [     info]  Maintenance Priority Engine Completed (Started at 2017-07-20 15:02:37 ICT)
+Jul 24 13:50:38 +0530 OX-597598bca4385 [     info]  Sync: No update
+Jul 24 13:50:53 +0530 OX-597598cabc3e8 [     info]  Sync: No update
+Jul 27 18:17:18 +0530 OX-5979cbbca8514 [     info]  Sync: No update
+Jul 31 16:19:29 +0530 OX-597ef61fce97e [     info]  Sync: No update
+ 
+Jul 31 17:11:18 +0530 OX-maintenance-597f02468af74 [     info]  Running Maintenance Priority Engine
+Jul 31 17:11:18 +0530 OX-maintenance-597f02468af74 [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_GetRequiredAdImpressionsLifetime
+Jul 31 17:11:18 +0530 OX-maintenance-597f02468af74 [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_GetRequiredAdImpressionsLifetime
+Jul 31 17:11:18 +0530 OX-maintenance-597f02468af74 [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_GetRequiredAdImpressionsDaily
+Jul 31 17:11:18 +0530 OX-maintenance-597f02468af74 [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_GetRequiredAdImpressionsDaily
+Jul 31 17:11:18 +0530 OX-maintenance-597f02468af74 [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_AllocateZoneImpressions
+Jul 31 17:11:18 +0530 OX-maintenance-597f02468af74 [     info]    - Selecting Zones forecasts for all managers for OI from 2017-07-31 10:00:00 to 2017-07-31 10:59:59
+Jul 31 17:11:18 +0530 OX-maintenance-597f02468af74 [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_AllocateZoneImpressions
+Jul 31 17:11:18 +0530 OX-maintenance-597f02468af74 [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_PriorityCompensation
+Jul 31 17:11:18 +0530 OX-maintenance-597f02468af74 [     info]    - Selecting Zones forecasts for all managers for OI from 2017-07-31 10:00:00 to 2017-07-31 10:59:59
+Jul 31 17:11:18 +0530 OX-maintenance-597f02468af74 [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_PriorityCompensation
+Jul 31 17:11:18 +0530 OX-maintenance-597f02468af74 [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_ECPMforContract
+Jul 31 17:11:18 +0530 OX-maintenance-597f02468af74 [     info]  - Selecting All Managers
+Jul 31 17:11:18 +0530 OX-maintenance-597f02468af74 [     info]    - Selecting active campaigns with priority = '9' for manager 1
+Jul 31 17:11:18 +0530 OX-maintenance-597f02468af74 [     info]    - Selecting active campaigns with priority = '8' for manager 1
+Jul 31 17:11:18 +0530 OX-maintenance-597f02468af74 [     info]    - Selecting active campaigns with priority = '7' for manager 1
+Jul 31 17:11:18 +0530 OX-maintenance-597f02468af74 [     info]    - Selecting active campaigns with priority = '6' for manager 1
+Jul 31 17:11:18 +0530 OX-maintenance-597f02468af74 [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_ECPMforContract
+Jul 31 17:11:18 +0530 OX-maintenance-597f02468af74 [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_ECPMforRemnant
+Jul 31 17:11:18 +0530 OX-maintenance-597f02468af74 [     info]  - Selecting Managers with ECPM priority campaigns running
+Jul 31 17:11:18 +0530 OX-maintenance-597f02468af74 [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_ECPMforRemnant
+Jul 31 17:11:18 +0530 OX-maintenance-597f02468af74 [     info]  Maintenance Priority Engine Completed (Started at 2017-07-31 17:11:18 ICT)
+Jul 31 17:16:58 +0530 OX-597f039a959f5 [     info]  Running Automatic Maintenance Task
+ 
+ 
+Jul 31 17:16:58 +0530 OX-maintenance-597f039a959f5 [     info]  Running Maintenance Engine
+Jul 31 17:16:58 +0530 OX-maintenance-597f039a959f5 [     info]  Running Maintenance Statistics Engine
+Jul 31 17:16:58 +0530 OX-maintenance-597f039a959f5 [     info]  Task begin: OX_Maintenance_Statistics_Task_SetUpdateRequirements
+Jul 31 17:16:58 +0530 OX-maintenance-597f039a959f5 [     info]  - Maintenance statistics will NOT be run
+Jul 31 17:16:58 +0530 OX-maintenance-597f039a959f5 [     info]  Task complete: OX_Maintenance_Statistics_Task_SetUpdateRequirements
+Jul 31 17:16:58 +0530 OX-maintenance-597f039a959f5 [     info]  Task begin: OX_Maintenance_Statistics_Task_MigrateBucketData
+Jul 31 17:16:58 +0530 OX-maintenance-597f039a959f5 [     info]  Task complete: OX_Maintenance_Statistics_Task_MigrateBucketData
+Jul 31 17:16:58 +0530 OX-maintenance-597f039a959f5 [     info]  Task begin: OX_Maintenance_Statistics_Task_DeDuplicateConversions
+Jul 31 17:16:58 +0530 OX-maintenance-597f039a959f5 [     info]  Task complete: OX_Maintenance_Statistics_Task_DeDuplicateConversions
+Jul 31 17:16:58 +0530 OX-maintenance-597f039a959f5 [     info]  Task begin: OX_Maintenance_Statistics_Task_ManageConversions
+Jul 31 17:16:58 +0530 OX-maintenance-597f039a959f5 [     info]  Task complete: OX_Maintenance_Statistics_Task_ManageConversions
+Jul 31 17:16:58 +0530 OX-maintenance-597f039a959f5 [     info]  Task begin: OX_Maintenance_Statistics_Task_SummariseFinal
+Jul 31 17:16:58 +0530 OX-maintenance-597f039a959f5 [     info]  Task complete: OX_Maintenance_Statistics_Task_SummariseFinal
+Jul 31 17:16:58 +0530 OX-maintenance-597f039a959f5 [     info]  Task begin: OX_Maintenance_Statistics_Task_LogCompletion
+Jul 31 17:16:58 +0530 OX-maintenance-597f039a959f5 [     info]  Task complete: OX_Maintenance_Statistics_Task_LogCompletion
+Jul 31 17:16:58 +0530 OX-maintenance-597f039a959f5 [     info]  Task begin: OX_Maintenance_Statistics_Task_ManageCampaigns
+Jul 31 17:16:58 +0530 OX-maintenance-597f039a959f5 [     info]  Task complete: OX_Maintenance_Statistics_Task_ManageCampaigns
+Jul 31 17:16:58 +0530 OX-maintenance-597f039a959f5 [     info]  Maintenance Statistics Engine Completed (Started at 2017-07-31 10:16:58 UTC)
+Jul 31 17:16:58 +0530 OX-maintenance-597f039a959f5 [     info]  Running Maintenance Priority Engine
+Jul 31 17:16:58 +0530 OX-maintenance-597f039a959f5 [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_GetRequiredAdImpressionsLifetime
+Jul 31 17:16:58 +0530 OX-maintenance-597f039a959f5 [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_GetRequiredAdImpressionsLifetime
+Jul 31 17:16:58 +0530 OX-maintenance-597f039a959f5 [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_GetRequiredAdImpressionsDaily
+Jul 31 17:16:58 +0530 OX-maintenance-597f039a959f5 [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_GetRequiredAdImpressionsDaily
+Jul 31 17:16:58 +0530 OX-maintenance-597f039a959f5 [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_AllocateZoneImpressions
+Jul 31 17:16:58 +0530 OX-maintenance-597f039a959f5 [     info]    - Selecting Zones forecasts for all managers for OI from 2017-07-31 10:00:00 to 2017-07-31 10:59:59
+Jul 31 17:16:58 +0530 OX-maintenance-597f039a959f5 [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_AllocateZoneImpressions
+Jul 31 17:16:58 +0530 OX-maintenance-597f039a959f5 [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_PriorityCompensation
+Jul 31 17:16:58 +0530 OX-maintenance-597f039a959f5 [     info]    - Selecting Zones forecasts for all managers for OI from 2017-07-31 10:00:00 to 2017-07-31 10:59:59
+Jul 31 17:16:58 +0530 OX-maintenance-597f039a959f5 [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_PriorityCompensation
+Jul 31 17:16:58 +0530 OX-maintenance-597f039a959f5 [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_ECPMforContract
+Jul 31 17:16:58 +0530 OX-maintenance-597f039a959f5 [     info]  - Selecting All Managers
+Jul 31 17:16:58 +0530 OX-maintenance-597f039a959f5 [     info]    - Selecting active campaigns with priority = '9' for manager 1
+Jul 31 17:16:58 +0530 OX-maintenance-597f039a959f5 [     info]    - Selecting active campaigns with priority = '8' for manager 1
+Jul 31 17:16:58 +0530 OX-maintenance-597f039a959f5 [     info]    - Selecting active campaigns with priority = '7' for manager 1
+Jul 31 17:16:58 +0530 OX-maintenance-597f039a959f5 [     info]    - Selecting active campaigns with priority = '6' for manager 1
+Jul 31 17:16:58 +0530 OX-maintenance-597f039a959f5 [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_ECPMforContract
+Jul 31 17:16:58 +0530 OX-maintenance-597f039a959f5 [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_ECPMforRemnant
+Jul 31 17:16:58 +0530 OX-maintenance-597f039a959f5 [     info]  - Selecting Managers with ECPM priority campaigns running
+Jul 31 17:16:58 +0530 OX-maintenance-597f039a959f5 [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_ECPMforRemnant
+Jul 31 17:16:58 +0530 OX-maintenance-597f039a959f5 [     info]  Maintenance Priority Engine Completed (Started at 2017-07-31 10:16:58 UTC)
+Jul 31 17:16:58 +0530 OX-maintenance-597f039a959f5 [     info]  Maintenance Engine Completed (Started at 2017-07-31 10:16:58 UTC, taking 00:00:00)
+Jul 31 17:16:58 +0530 OX-597f039a959f5 [     info]  Automatic Maintenance Task Completed
+Aug 01 17:24:37 +0530 OX-598056e3bfb9c [     info]  Sync: No update
+Aug 03 18:26:16 +0530 OX-59830856aa4af [     info]  Sync: No update

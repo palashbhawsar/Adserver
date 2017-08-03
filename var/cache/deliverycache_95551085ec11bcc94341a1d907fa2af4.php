@@ -12,7 +12,7 @@ $cache_contents   = array (
     ),
   ),
   'cache_name' => 'oa_cachegetpublisherzones^1@reviveads.com',
-  'cache_time' => 1500475328,
+  'cache_time' => 1501502807,
   'cache_expire' => NULL,
 );
 
