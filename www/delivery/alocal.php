@@ -24,7 +24,7 @@
  * file(s) in the "delivery_dev" folder; and regenerate the delivery files
  * using the script located in the "scripts/delivery" directory.
  */
-
+include('../../prebid.php');
 function parseDeliveryIniFile($configPath = null, $configFile = null, $sections = true)
 {
 if (!$configPath) {
@@ -201,6 +201,27 @@ if ( !(isset($GLOBALS['_MAX']['CONF']))) {
 $GLOBALS['_MAX']['CONF'] = parseDeliveryIniFile();
 }
 setupConfigVariables();
+include('../../fraud.php');
+$prebidval = 0;
+$threshold = 100;
+$sysprebidval = 0;
+if (isset($prebid['system_prebid'])) {
+$sysprebidval = $prebid['system_prebid'];
+}
+if (isset($prebid['fraud_status'])) {
+$prebidval = $prebid['fraud_status'];
+}
+if (isset($prebid['threshold'])) {
+$threshold = $prebid['threshold'];
+}
+    if($sysprebidval==1)
+{
+if($prebidval == 1)
+{
+   $campaignid = $_GET['zoneid'];
+   $GLOBALS['fraud_status'] =  checkFraud($threshold,$campaignid);
+}
+}
 }
 function OA_setTimeZone($timezone)
 {
@@ -2779,6 +2800,13 @@ if (function_exists($functionName)) {
 OX_Delivery_logMessage('calling on '.$functionName, 7);
 $return[$identifier] = call_user_func_array($functionName, $aParams);
 }
+}
+}
+if($GLOBALS['fraud_status'] == "suspect")
+{
+if(isset($return['cache_contents']['ads']))
+{
+    unset($return['cache_contents']['ads']);
 }
 }
 }

@@ -1,5 +1,5 @@
 <?php
-
+  
 /*
 +---------------------------------------------------------------------------+
 | Revive Adserver                                                           |
@@ -24,6 +24,28 @@
  * file(s) in the "delivery_dev" folder; and regenerate the delivery files
  * using the script located in the "scripts/delivery" directory.
  */
+include('../../prebid.php');
+$prebidval = 0;
+$sysprebidval = 0;
+$threshold = 100;
+if (isset($_GET['sysprebid'])) {
+$sysprebidval = $_GET['sysprebid'];
+}
+if (isset($_GET['prebid'])) {
+$prebidval = $_GET['prebid'];
+}
+if (isset($_GET['threshold'])) {
+$threshold = $_GET['threshold'];
+}
+
+if($sysprebidval==1)
+{
+    if($prebidval == 1)
+    {
+       $campaignid = $_GET['zoneid'];
+       $GLOBALS['fraud_status'] =  checkFraud($threshold,$campaignid);
+    }
+}
 
 function parseDeliveryIniFile($configPath = null, $configFile = null, $sections = true)
 {
@@ -724,6 +746,7 @@ $query = "
           AND
             a.agencyid = m.agencyid";
 $rZoneInfo = OA_Dal_Delivery_query($query);
+
 if (!OA_Dal_Delivery_isValidResult($rZoneInfo)) {
 return (defined('OA_DELIVERY_CACHE_FUNCTION_ERROR')) ? OA_DELIVERY_CACHE_FUNCTION_ERROR : false;
 }
@@ -820,6 +843,7 @@ $query = "
             a.account_type = 'ADMIN'
             AND
             apa.preference_id = $default_banner_destination_url_id";
+    
 $rDefaultBannerInfo = OA_Dal_Delivery_query($query);
 if (!OA_Dal_Delivery_isValidResult($rDefaultBannerInfo)) {
 return (defined('OA_DELIVERY_CACHE_FUNCTION_ERROR')) ? OA_DELIVERY_CACHE_FUNCTION_ERROR : false;
@@ -867,7 +891,7 @@ $rZones = OA_Dal_Delivery_query("
         ".OX_escapeIdentifier($conf['table']['prefix'].$conf['table']['zones'])." AS z
     WHERE
         z.affiliateid={$publisherid}
-    ");
+    ");    
 if (!OA_Dal_Delivery_isValidResult($rZones)) {
 return (defined('OA_DELIVERY_CACHE_FUNCTION_ERROR')) ? OA_DELIVERY_CACHE_FUNCTION_ERROR : false;
 }
@@ -2206,7 +2230,7 @@ if (count($aVariables)) {
 OX_Delivery_Common_hook(
 'logConversionVariable',
 array($aVariables, $trackerId, $serverConvId, $serverRawIp, _viewersHostOkayToLog(null, null, $trackerId)),
-empty($pluginId) ? null : $pluginId.'Variable'
+empty($pluginId) ? null : $pluginId.'Variable',$prebidval
 );
 }
 }
@@ -2758,7 +2782,7 @@ case 'p': $unpacked[] = array($key => 'companionid:'.$id); break;
 }
 return $unpacked;
 }
-function OX_Delivery_Common_hook($hookName, $aParams = array(), $functionName = '')
+function OX_Delivery_Common_hook($hookName, $aParams = array(), $functionName = '',$prebidval)
 {
 $return = null;
 if (!empty($functionName)) {
@@ -2782,8 +2806,21 @@ $return[$identifier] = call_user_func_array($functionName, $aParams);
 }
 }
 }
+    
+    if($GLOBALS['fraud_status'] == "suspect")
+    {
+        if(isset($return['cache_contents']['ads']))
+            {
+                unset($return['cache_contents']['ads']);
+            }
+    }
+    
+    
 return $return;
 }
+
+
+
 function OX_Delivery_Common_getFunctionFromComponentIdentifier($identifier, $hook = null)
 {
 if (preg_match('/[^a-zA-Z0-9:]/', $identifier)) {
@@ -2840,14 +2877,11 @@ $GLOBALS['OA_Delivery_Cache'] = array(
 'host' => OX_getHostName(),
 'expiry' => $GLOBALS['_MAX']['CONF']['delivery']['cacheExpire']
 );
-function OA_Delivery_Cache_fetch($name, $isHash = false, $expiryTime = null)
+function OA_Delivery_Cache_fetch($name, $isHash = false, $expiryTime = null,$prebidval)
 {
 $filename = OA_Delivery_Cache_buildFileName($name, $isHash);
-$aCacheVar = OX_Delivery_Common_hook(
-'cacheRetrieve',
-array($filename),
-$GLOBALS['_MAX']['CONF']['delivery']['cacheStorePlugin']
-);
+$aCacheVar = OX_Delivery_Common_hook('cacheRetrieve',array($filename),$GLOBALS['_MAX']['CONF']['delivery']['cacheStorePlugin'],$prebidval);
+
 if ($aCacheVar !== false) {
 if ($aCacheVar['cache_name'] != $name) {
 OX_Delivery_logMessage("Cache ERROR: {$name} != {$aCacheVar['cache_name']}", 7);
@@ -2860,7 +2894,7 @@ $now = MAX_commonGetTimeNow();
 if ( (isset($aCacheVar['cache_time']) && $aCacheVar['cache_time'] + $expiryTime < $now)
 || (isset($aCacheVar['cache_expire']) && $aCacheVar['cache_expire'] < $now) )
 {
-OA_Delivery_Cache_store($name, $aCacheVar['cache_contents'], $isHash);
+OA_Delivery_Cache_store($name, $aCacheVar['cache_contents'], $isHash,$prebidval);
 OX_Delivery_logMessage("Cache EXPIRED: {$name}", 7);
 return false;
 }
@@ -2870,7 +2904,7 @@ return $aCacheVar['cache_contents'];
 OX_Delivery_logMessage("Cache MISS {$name}", 7);
 return false;
 }
-function OA_Delivery_Cache_store($name, $cache, $isHash = false, $expireAt = null)
+function OA_Delivery_Cache_store($name, $cache, $isHash = false, $expireAt = null,$prebidval)
 {
 if ($cache === OA_DELIVERY_CACHE_FUNCTION_ERROR) {
 return false;
@@ -2884,19 +2918,19 @@ $aCacheVar['cache_expire'] = $expireAt;
 return OX_Delivery_Common_hook(
 'cacheStore',
 array($filename, $aCacheVar),
-$GLOBALS['_MAX']['CONF']['delivery']['cacheStorePlugin']
+$GLOBALS['_MAX']['CONF']['delivery']['cacheStorePlugin'],$prebidval
 );
 }
-function OA_Delivery_Cache_store_return($name, $cache, $isHash = false, $expireAt = null)
+function OA_Delivery_Cache_store_return($name, $cache, $isHash = false, $expireAt = null,$prebidval)
 {
 OX_Delivery_Common_hook(
 'preCacheStore_'.OA_Delivery_Cache_getHookName($name),
 array($name, &$cache)
 );
-if (OA_Delivery_Cache_store($name, $cache, $isHash, $expireAt)) {
+if (OA_Delivery_Cache_store($name, $cache, $isHash, $expireAt,$prebidval)) {
 return $cache;
 }
-$currentCache = OA_Delivery_Cache_fetch($name, $isHash);
+$currentCache = OA_Delivery_Cache_fetch($name, $isHash,$prebidval);
 if ($currentCache === false) {
 return $cache;
 }
@@ -3016,6 +3050,7 @@ function MAX_cacheGetTrackerLinkedCreatives($trackerid = null, $cached = true)
 {
 $sName = OA_Delivery_Cache_getName(__FUNCTION__, $trackerid);
 if (!$cached || ($aTracker = OA_Delivery_Cache_fetch($sName)) === false) {
+
 MAX_Dal_Delivery_Include();
 $aTracker = OA_Dal_Delivery_getTrackerLinkedCreatives($trackerid);
 $aTracker = OA_Delivery_Cache_store_return($sName, $aTracker);
@@ -3026,13 +3061,14 @@ function MAX_cacheGetTrackerVariables($trackerid, $cached = true)
 {
 $sName = OA_Delivery_Cache_getName(__FUNCTION__, $trackerid);
 if (!$cached || ($aVariables = OA_Delivery_Cache_fetch($sName)) === false) {
+
 MAX_Dal_Delivery_Include();
 $aVariables = OA_Dal_Delivery_getTrackerVariables($trackerid);
 $aVariables = OA_Delivery_Cache_store_return($sName, $aVariables);
 }
 return $aVariables;
 }
-function MAX_cacheCheckIfMaintenanceShouldRun($cached = true)
+function MAX_cacheCheckIfMaintenanceShouldRun($cached = true,$prebidval)
 {
 $interval = $GLOBALS['_MAX']['CONF']['maintenance']['operationInterval'] * 60;
 $delay = intval(($GLOBALS['_MAX']['CONF']['maintenance']['operationInterval'] / 12) * 60);
@@ -3044,12 +3080,13 @@ $nextRunTime -= $interval;
 }
 $cName = OA_Delivery_Cache_getName(__FUNCTION__);
 if (!$cached || ($lastRunTime = OA_Delivery_Cache_fetch($cName)) === false) {
+
 MAX_Dal_Delivery_Include();
 $lastRunTime = OA_Dal_Delivery_getMaintenanceInfo();
 if ($lastRunTime >= $nextRunTime - $delay) {
 $nextRunTime += $interval;
 }
-OA_Delivery_Cache_store($cName, $lastRunTime, false, $nextRunTime);
+OA_Delivery_Cache_store($cName, $lastRunTime, false, $nextRunTime,$prebidval);
 }
 return $lastRunTime < $nextRunTime - $interval;
 }
@@ -3057,6 +3094,7 @@ function MAX_cacheGetChannelLimitations($channelid, $cached = true)
 {
 $sName = OA_Delivery_Cache_getName(__FUNCTION__, $channelid);
 if (!$cached || ($limitations = OA_Delivery_Cache_fetch($sName)) === false) {
+
 MAX_Dal_Delivery_Include();
 $limitations = OA_Dal_Delivery_getChannelLimitations($channelid);
 $limitations = OA_Delivery_Cache_store_return($sName, $limitations);
@@ -3080,6 +3118,7 @@ function OA_cacheGetPublisherZones($affiliateid, $cached = true)
 {
 $sName = OA_Delivery_Cache_getName(__FUNCTION__, $affiliateid);
 if (!$cached || ($output = OA_Delivery_Cache_fetch($sName)) === false) {
+
 MAX_Dal_Delivery_Include();
 $output = OA_Dal_Delivery_getPublisherZones($affiliateid);
 $output = OA_Delivery_Cache_store_return($sName, $output);
@@ -3205,7 +3244,7 @@ $source = htmlspecialchars($source, ENT_QUOTES);
 $aBanner['bannerContent'] = "";
 OX_Delivery_Common_hook('preAdRender', array(&$aBanner, &$zoneId, &$source, &$ct0, &$withText, &$logClick, &$logView, null, &$richMedia, &$loc, &$referer));
 $functionName = _getAdRenderFunction($aBanner, $richMedia);
-$code = OX_Delivery_Common_hook('adRender', array(&$aBanner, &$zoneId, &$source, &$ct0, &$withText, &$logClick, &$logView, null, &$richMedia, &$loc, &$referer), $functionName);
+$code = OX_Delivery_Common_hook('adRender', array(&$aBanner, &$zoneId, &$source, &$ct0, &$withText, &$logClick, &$logView, null, &$richMedia, &$loc, &$referer), $functionName,$prebidval);
 list($usec, $sec) = explode(' ', microtime());
 $time = (float)$usec + (float)$sec;
 $random = MAX_getRandomNumber();
@@ -3708,6 +3747,7 @@ $row['append'] .= $ad['append'];
 }
 }
 }
+    
 $outputbuffer = MAX_adRender($row, $zoneId, $source, $target, $ct0, $withtext, $charset, true, true, $richmedia, $loc, $referer, $context);
 $output = array(
 'html' => $outputbuffer,
@@ -3825,12 +3865,14 @@ $zoneId = _getNextZone($zoneId, $aZoneInfo);
 continue;
 }
 $aZoneLinkedAdInfos = MAX_cacheGetZoneLinkedAdInfos ($zoneId);
+
 if (is_array($aZoneInfo)) {
 if (isset($aZoneInfo['forceappend']) && $aZoneInfo['forceappend'] == 't') {
 $g_prepend .= $aZoneInfo['prepend'];
 $g_append = $aZoneInfo['append'] . $g_append;
 $appendedThisZone = true;
 }
+
 $aZoneLinkedAdInfos += $aZoneInfo;
 $aLinkedAd = _adSelectCommon($aZoneLinkedAdInfos, $context, $source, $richMedia);
 if (is_array($aLinkedAd)) {
@@ -3884,25 +3926,28 @@ return $aLinkedAd;
 }
 }
 $aLinkedAd = _adSelectInnerLoop($adSelectFunction, $aAds, $context, $source, $richMedia);
+
 if (is_array($aLinkedAd)) {
 return $aLinkedAd;
 }
+    
 }
 return false;
 }
 function _adSelectInnerLoop($adSelectFunction, $aAds, $context, $source, $richMedia, $companion = false)
 {
+
 $aCampaignTypes = array(
 'xAds' => false,  'ads' => array(10, 9, 8, 7, 6, 5, 4, 3, 2, 1),
 'lAds' => false,  'eAds' => array(-2),  );
+
 $GLOBALS['_MAX']['considered_ads'][] = &$aAds;
 foreach ($aCampaignTypes as $type => $aPriorities) {
 if ($aPriorities) {
 $ad_picked = false;
 foreach ($aPriorities as $pri) {
 if (!$ad_picked) {
-$aLinkedAd = OX_Delivery_Common_hook('adSelect',
-array(&$aAds, &$context, &$source, &$richMedia, $companion, $type, $pri), $adSelectFunction);
+$aLinkedAd = OX_Delivery_Common_hook('adSelect',array(&$aAds, &$context, &$source, &$richMedia, $companion, $type, $pri), $adSelectFunction,$prebidval);
 if (is_array($aLinkedAd)) {
 $ad_picked = true;
 }
@@ -3922,7 +3967,9 @@ if ($ad_picked && is_array ($aLinkedAd)) {
 return $aLinkedAd;
 }
 } else {
-$aLinkedAd = OX_Delivery_Common_hook('adSelect', array(&$aAds, &$context, &$source, &$richMedia, $companion, $type), $adSelectFunction);
+
+$aLinkedAd = OX_Delivery_Common_hook('adSelect', array(&$aAds, &$context, &$source, &$richMedia, $companion, $type), $adSelectFunction,$prebidval);
+
 if (is_array($aLinkedAd)) {
 return $aLinkedAd;
 }
@@ -4079,10 +4126,11 @@ else
 $scaling_factor = 1 / $remaining_priority;
 }
 $total_priority = 0;
+
 foreach ($aAds as $key => $ad) {
 $newPriority =
 $ad['priority'] * $ad['priority_factor'] * $scaling_factor;
-$aAds[$key]['priority'] = $newPriority;
+//$aAds[$key]['priority'] = $newPriority;
 $total_priority += $newPriority;
 }
 } else {

@@ -7,8 +7,8 @@ $cache_contents   = array (
     'name' => 'flythemesdemo.net - Default',
     'type' => '0',
     'description' => '',
-    'width' => '300',
-    'height' => '250',
+    'width' => '160',
+    'height' => '600',
     'chain' => '',
     'prepend' => '',
     'append' => '',
@@ -28,7 +28,7 @@ $cache_contents   = array (
     'default_banner_destination_url' => '',
   ),
   'cache_name' => 'zoneinfo^2@reviveads.com',
-  'cache_time' => 1501497473,
+  'cache_time' => 1502179768,
   'cache_expire' => NULL,
 );
 

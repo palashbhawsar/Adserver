@@ -1,5 +1,4 @@
 <?php
-echo "INNNNN";
 function Prebid ()
 {
     $aConf = $GLOBALS['_MAX']['CONF'];
@@ -19,9 +18,6 @@ MAX_Dal_Delivery_Include();
 if($system_prebid == 1)
 {
     $prebid = Prebid();
-}else
-{
-    echo "sasas";
 }
 ?>
 
